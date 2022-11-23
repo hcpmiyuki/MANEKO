@@ -1,0 +1,10 @@
+version: '3'
+services:
+  maneko:
+    restart: always
+    build: .
+    container_name: 'python3'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./bot:/root/bot
