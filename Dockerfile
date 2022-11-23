@@ -15,3 +15,5 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
 RUN python -m pip install slack_bolt
+
+CMD ["python", "app.py"]

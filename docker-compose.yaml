@@ -4,7 +4,9 @@ services:
     restart: always
     build: .
     container_name: 'python3'
-    working_dir: '/root/'
+    working_dir: '/root/bot'
     tty: true
     volumes:
       - ./bot:/root/bot
+    env_file:
+      - .env
